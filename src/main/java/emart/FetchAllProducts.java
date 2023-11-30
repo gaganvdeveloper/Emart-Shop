@@ -25,7 +25,7 @@ public class FetchAllProducts extends HttpServlet {
 			ResultSet rs = ps.executeQuery();
 			String result = "<html lang=\"en\">\r\n"
 					+ "  <head>\r\n"
-					+ "    <title>Home Page</title>\r\n"
+					+ "    <title>All Product's Page</title>\r\n"
 					+ "    <link\r\n"
 					+ "      rel=\"stylesheet\"\r\n"
 					+ "      href=\"https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css\"\r\n"
@@ -74,7 +74,7 @@ public class FetchAllProducts extends HttpServlet {
 				String name = rs.getString(2);
 				String price = rs.getString(3);
 				String quantity = rs.getString(4);
-				result = result+"<tr><td>"+id+"</td> <td>"+name+"</td> <td>"+price+"</td> <td>"+quantity+"</td><td><a href='fetch?id="+id+"'><button type='button'>Update</button></a></td><td><a href='delete?id="+id+"'><button type='button'>Delete</button></a></td></tr>";
+				result = result+"<tr><td>"+id+"</td> <td>"+name+"</td> <td>"+price+"</td> <td>"+quantity+"</td><td><a href='fetch?id="+id+"'><button type='button' class='updatebut'>Update</button></a></td><td><a href='delete?id="+id+"'><button type='button' class='deletebut'>Delete</button></a></td></tr>";
 			}
 			result=result+" </tbody>\r\n"
 					+ "        </table>\r\n"

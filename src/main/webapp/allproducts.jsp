@@ -11,10 +11,16 @@
 	border: none;
 	background-color: gainsboro;
 	padding: 8px 15px;
-}
-button:hover{
-	background-color: silver;
-}
+	}
+	button:hover{
+		background-color: silver;
+	}
+	.updatebut:hover{
+		background-color:lightgreen;
+	}
+	.deletebut:hover{
+		background-color:red;
+	}
 </style>
 </head>
 <body>

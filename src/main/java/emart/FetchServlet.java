@@ -117,7 +117,7 @@ public class FetchServlet extends HttpServlet {
 					+ "<br>\r\n"
 					+ "    <h1 id=\"headline\">Enter Product Details : </h1>\r\n"
 					+ "    <form  action=\"update\">\r\n"
-					+ "        <label for=\"id\">ID : </label><input type=\"text\" value='"+rs.getInt(1)+"' name=\"id\" id=\"id\" placeholder=\"Enter Id\" required=\"required\">\r\n"
+					+ "        <label for=\"id\">ID : </label><input type=\"text\" value='"+rs.getInt(1)+"' name=\"id\" id=\"id\" placeholder=\"Enter Id\" readonly='readonly' required=\"required\">\r\n"
 					+ "        <label for=\"name\">Name : </label><input type=\"text\" value='"+rs.getString(2)+"' name=\"name\" id=\"name\" placeholder=\"Enter Name\" required=\"required\">\r\n"
 					+ "        <label for=\"price\">Price : </label><input type=\"text\" value='"+rs.getString(3)+"' name=\"price\" id=\"price\" placeholder=\"Enter Price\" required=\"required\">\r\n"
 					+ "        <label for=\"quantity\">Quantity : </label><input type=\"text\" value='"+rs.getString(4)+"' name=\"quantity\" id=\"quantity\" placeholder=\"Enter Quantity\" required=\"required\">\r\n"

@@ -52,8 +52,8 @@
         }
 
         button {
-            background-color: #09ac19; 
-            color: #fff;
+            background-color: gainsboro; 
+            color: black;
             padding: 10px;
             border: none;
             border-radius: 5px;
@@ -63,7 +63,7 @@
         }
 
         button:hover {
-            background-color: #14800e;
+            background-color: lightgreen;
         }
         #refresh{
             background-color: white; 
